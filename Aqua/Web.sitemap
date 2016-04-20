@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Home/WaterStoreHome.aspx" title="Home"  description="" >
+        <siteMapNode url="Accounts/Default.aspx" title="Accounts"   description="">
+            <siteMapNode url="Accounts/SearchAccount.aspx" title="Search"></siteMapNode>
+            <siteMapNode url="Accounts/NewAccount.aspx" title="Create New Account"></siteMapNode>
+            <siteMapNode  url="Accounts/ViewAccount.aspx" title="View Account" ></siteMapNode>
+        </siteMapNode>
+
+        <siteMapNode url="/Sales/Default.aspx" title="Sales"  description="">
+            <siteMapNode url="/Sales/SearchInvoice.aspx" title="Search Invoice" description=""></siteMapNode>
+            <siteMapNode url="/Sales/New.aspx" title="Create New"  description=""></siteMapNode>
+
+            <siteMapNode url="/Sales/Invoice.aspx" title="View Invoice" description=""></siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="/Service/Default.aspx" title="Service" description="">
+            <!--<siteMapNode url="/Service/Search.aspx" title="Search" description=""></siteMapNode>-->
+            <!--<siteMapNode url="/Service/View.aspx" title="View" description=""></siteMapNode>-->
+        </siteMapNode>
+        <siteMapNode url="/Products/Search.aspx" title="Product Search"  description=""  >
+
+        </siteMapNode>
+        <siteMapNode url="Admin/Default.aspx" title="Admin" roles="Administrators" >
+            <siteMapNode url="Admin/EmployeeManagement/Default.aspx" title="Employee Management" >
+                <siteMapNode  url="Admin/EmployeeManagement/SearchEmployee.aspx" title="Search"  ></siteMapNode>
+                <siteMapNode url ="Admin/EmployeeManagement/NewEmployee.aspx" title ="Create New Employee" ></siteMapNode>
+                <siteMapNode url ="Admin/EmployeeManagement/ShowAllEmployees.aspx" title ="Show All Employees" ></siteMapNode>
+                <siteMapNode  url="Admin/EmployeeManagement/ManageJobTitle.aspx" title="Manage Job Position"  ></siteMapNode>
+                <siteMapNode url ="Admin/EmployeeManagement/ViewEmployee.aspx" title ="View Employee" ></siteMapNode>
+
+            </siteMapNode>
+
+            <siteMapNode url="Admin/ProductManagement/Default.aspx" title="Product Management" description="">
+                <siteMapNode url ="Admin/ProductManagement/AddProduct.aspx" title="Add Product" description =""></siteMapNode>
+                <siteMapNode url="Admin/ProductManagement/SearchProduct.aspx" title ="Search Product" description=""></siteMapNode>
+                <siteMapNode url ="Admin/ProductManagement/ShowAllProducts.aspx" title="Show All Products" description =""></siteMapNode>
+                <siteMapNode url="Admin/ProductManagement/ManageProductCategory.aspx" title="Manage Product Category " desc=""></siteMapNode>
+                <siteMapNode url="Admin/ProductManagement/ViewProduct.aspx" title="View Product" description=""></siteMapNode>
+            </siteMapNode>
+            <siteMapNode url="Admin/UserManagement/Default.aspx" title="User Management">
+                <siteMapNode url="Admin/UserManagement/CreateUser.aspx" title="Create User"></siteMapNode>
+                <siteMapNode url="Admin/UserManagement/DeleteUser.aspx" title="Delete User"></siteMapNode>
+                <siteMapNode url="Admin/UserManagement/EditRolesAssignedToUsers.aspx" title="Edit User and Assigned Roles"></siteMapNode>
+            </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url ="/Reports/Default.aspx" title="Reports" description="">
+            <siteMapNode url="/Reports/AccountWithNPB.aspx" title="Accounts with NPB" description =""></siteMapNode>
+            <siteMapNode url="/Reports/LowInStock.aspx" title="Understock Products" description=""></siteMapNode>
+
+            <siteMapNode url="/Reports/SalesByMonth.aspx" title="Sales - YTD" description=""></siteMapNode>
+            <siteMapNode url="/Reports/SalesReportWithRange.aspx" title="Sales - by Date Range" description=""> </siteMapNode>
+
+        </siteMapNode>
+        <siteMapNode url="/WebAdmin/Default.aspx" title="Web Admin" description="">
+            <siteMapNode url="WebAdmin/ManageRoles.aspx" title="Manage Roles" description=""></siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="UserSettings/Default.aspx" title="My Settings"  >
+        </siteMapNode>
+
+    </siteMapNode>
+</siteMap>

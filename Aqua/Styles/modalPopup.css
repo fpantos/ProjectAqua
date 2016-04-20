@@ -1,0 +1,24 @@
+﻿/*Modal popup css*/
+.modalPopupLinkbutton-div
+{ 
+    display:block;
+    width:95%;
+    text-align: right;
+    padding-right:3em;
+    margin:1em 0 2em 0;
+}
+
+.modalPopupPanel
+{
+    width: 50%;
+    display: none;
+    border: solid 3px gray;
+    background-color:#FFFFDB;
+}
+
+.ModalPopupBackground
+{
+    background-color: Gray;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}

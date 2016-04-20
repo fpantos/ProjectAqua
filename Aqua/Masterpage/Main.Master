@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Aqua.Masterpage.Main" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>The Water Store Milton</title>
+    <link href="../Styles/mainStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="~/Images/favicon.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .loginBox
+        {
+            padding-right: 40px;
+            padding-top: 1em;
+            text-align: right;
+            margin: 0 0 5px 0;
+        }
+        
+        .loginview-label
+        {
+            color: white;
+            font-size: 1em;
+        }
+        
+        .loginName
+        {
+            color: white;
+        }
+        
+        .loginStatus
+        {
+            color: white;
+        }
+        
+        .changepassword
+        {
+            color: black;
+        }
+    </style>
+    <script type="text/javascript">
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+        prm.add_pageLoading(function() {
+        var f = document.getElementById(“__VIEWSTATEFIELDCOUNT”);
+        if (f) f.parentNode.removeChild(f);
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ToolkitScriptManager>
+    <div class="wrapper">
+        <div style="background-color: #1f6aae; height: 80px;">
+            <div style="float: left; padding: 1em 0 0 1em;">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo_s.jpg" />
+            </div>
+            <%--login view and status--%>
+            <div class="loginBox">
+                <asp:LoginView ID="LoginView1" runat="server">
+                    <AnonymousTemplate>
+                        <asp:Label ID="Label1" runat="server" Text="You are not logged in" CssClass="loginview-label"></asp:Label>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <asp:Label ID="Label2" runat="server" Text="User: " CssClass="loginview-label"></asp:Label>
+                        &nbsp<asp:LoginName ID="LoginName1" runat="server" CssClass="loginName" />
+                        <br />
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutPageUrl="~/Default.aspx"
+                            LogoutAction="Redirect" CssClass="loginStatus" />
+                        <asp:Label ID="Label3" runat="server" ForeColor="white">|</asp:Label>&nbsp<asp:LinkButton
+                            ID="LinkButton1" runat="server" ForeColor="White" PostBackUrl="~/UserSettings/Default.aspx">Settings</asp:LinkButton>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                <br />
+            </div>
+        </div>
+        <%--menu or sitemap--%>
+        <div style="clear: both">
+            <asp:ContentPlaceHolder ID="NavigationPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <%-- main content--%>
+        <div class="content1">
+            <asp:ContentPlaceHolder ID="mainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="push">
+        </div>
+        <%--footer--%>
+        <%--     <div class="css-grd" style="height: 30px;">
+        </div>--%>
+        <div class="footer">
+            <p>
+                The Water Store Milton
+                <br />
+                525 Ontario Street South
+                <br />
+                Milton, ON L9T 2N2<br />
+                (905) 693-8820
+            </p>
+            <p>
+                <br />
+                &#169 2011 Bolt Software Solutions</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

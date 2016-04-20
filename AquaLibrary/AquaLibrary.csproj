@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB770A17-785C-49ED-87F7-B8A1DDA32521}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AquaLibrary</RootNamespace>
+    <AssemblyName>AquaLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elmah">
+      <HintPath>..\..\..\ELMAH-1.2-bin-x86\bin\net-2.0\Debug\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLayer\AccountAddressManager.cs" />
+    <Compile Include="BusinessLayer\AccountManager.cs" />
+    <Compile Include="BusinessLayer\AddressManager.cs" />
+    <Compile Include="BusinessLayer\AuthorizedMemberManager.cs" />
+    <Compile Include="BusinessLayer\EmployeeAddressManager.cs" />
+    <Compile Include="BusinessLayer\EmployeeManager.cs" />
+    <Compile Include="BusinessLayer\InvoiceLineItemManager.cs" />
+    <Compile Include="BusinessLayer\InvoiceManager.cs" />
+    <Compile Include="BusinessLayer\JobPositionManager.cs" />
+    <Compile Include="BusinessLayer\PrepaidBottleManager.cs" />
+    <Compile Include="BusinessLayer\PrepaidBottleTransactionManager.cs" />
+    <Compile Include="BusinessLayer\PrepaidBottleTypeManager.cs" />
+    <Compile Include="BusinessLayer\ProductPartReplacementManager.cs" />
+    <Compile Include="BusinessLayer\ProductManager.cs" />
+    <Compile Include="BusinessLayer\Ref_ProductCategoryManager.cs" />
+    <Compile Include="BusinessLayer\Ref_WaterSourceLocationManager.cs" />
+    <Compile Include="BusinessLayer\SalesReportManager.cs" />
+    <Compile Include="BusinessLayer\ServiceWorkManager.cs" />
+    <Compile Include="BusinessLayer\STG_ServiceWorkManager.cs" />
+    <Compile Include="BusinessLayer\ServiceWorkToBeDoneManager.cs" />
+    <Compile Include="BusinessLayer\WaterAnalysisManager.cs" />
+    <Compile Include="BusinessLayer\WaterUsageManager.cs" />
+    <Compile Include="BusinessLayer\WTEManager.cs" />
+    <Compile Include="BusinessObject\Account.cs" />
+    <Compile Include="BusinessObject\AccountAddress.cs" />
+    <Compile Include="BusinessObject\Address.cs" />
+    <Compile Include="BusinessObject\Collections\InvoiceList.cs" />
+    <Compile Include="BusinessObject\Collections\PrepaidBottleList.cs" />
+    <Compile Include="BusinessObject\Collections\PrepaidBottleTransactioList.cs" />
+    <Compile Include="BusinessObject\Collections\PrepaidBottleTypeList.cs" />
+    <Compile Include="BusinessObject\Collections\ProductAssemblyList.cs" />
+    <Compile Include="BusinessObject\Collections\Ref_ProductCategoryList.cs" />
+    <Compile Include="BusinessObject\Collections\ServiceWorkList.cs" />
+    <Compile Include="BusinessObject\Collections\STG_ServiceWorkList.cs" />
+    <Compile Include="BusinessObject\Collections\WaterTreatmentEquipmentList.cs" />
+    <Compile Include="BusinessObject\Collections\WaterUsageList.cs" />
+    <Compile Include="BusinessObject\Invoice.cs" />
+    <Compile Include="BusinessObject\PrepaidBottle.cs" />
+    <Compile Include="BusinessObject\PrepaidBottleTransaction.cs" />
+    <Compile Include="BusinessObject\PrepaidBottleType.cs" />
+    <Compile Include="BusinessObject\ProductPartReplacement.cs" />
+    <Compile Include="BusinessObject\AuthorizedMember.cs" />
+    <Compile Include="BusinessObject\Collections\AccountAddressList.cs" />
+    <Compile Include="BusinessObject\Collections\AccountList.cs" />
+    <Compile Include="BusinessObject\Collections\AddressList.cs" />
+    <Compile Include="BusinessObject\Collections\AuthorizedMemberList.cs" />
+    <Compile Include="BusinessObject\Collections\EmployeeAddressList.cs" />
+    <Compile Include="BusinessObject\Collections\EmployeeList.cs" />
+    <Compile Include="BusinessObject\Collections\InvoiceLineItemList.cs" />
+    <Compile Include="BusinessObject\Collections\JobPositionList.cs" />
+    <Compile Include="BusinessObject\Collections\ProductList.cs" />
+    <Compile Include="BusinessObject\Collections\WaterAnalysisList.cs" />
+    <Compile Include="BusinessObject\Collections\ServiceWorkToBeDoneList.cs" />
+    <Compile Include="BusinessObject\JobPosition.cs" />
+    <Compile Include="BusinessObject\Person.cs" />
+    <Compile Include="BusinessObject\Ref_ProductCategory.cs" />
+    <Compile Include="BusinessObject\ServiceWork.cs" />
+    <Compile Include="BusinessObject\ServiceWorkToBeDone.cs" />
+    <Compile Include="BusinessObject\Employee.cs" />
+    <Compile Include="BusinessObject\EmployeeAddress.cs" />
+    <Compile Include="BusinessObject\InvoiceLineItem.cs" />
+    <Compile Include="BusinessObject\Product.cs" />
+    <Compile Include="BusinessObject\STG_ServiceWork.cs" />
+    <Compile Include="BusinessObject\WaterTreatmentEquipment.cs" />
+    <Compile Include="BusinessObject\WaterUsage.cs" />
+    <Compile Include="DataAccess\EmployeeAddressDB.cs" />
+    <Compile Include="DataAccess\EmployeeDB.cs" />
+    <Compile Include="DataAccess\InvoiceDB.cs" />
+    <Compile Include="DataAccess\InvoiceLineItemDB.cs" />
+    <Compile Include="DataAccess\JobPositionDB.cs" />
+    <Compile Include="DataAccess\PrepaidBottleDB.cs" />
+    <Compile Include="DataAccess\PrepaidBottleTransactionDB.cs" />
+    <Compile Include="DataAccess\PrepaidBottleTypeDB.cs" />
+    <Compile Include="DataAccess\ProductAssemblyDB.cs" />
+    <Compile Include="DataAccess\ProductDB.cs" />
+    <Compile Include="DataAccess\Ref_ProductCategoryDB.cs" />
+    <Compile Include="DataAccess\Ref_WaterSourceLocationDB.cs" />
+    <Compile Include="DataAccess\SalesReportDB.cs" />
+    <Compile Include="DataAccess\ServiceWorkDB.cs" />
+    <Compile Include="DataAccess\STG_ServiceWorkDB.cs" />
+    <Compile Include="DataAccess\ServiceWorkToBeDoneDB.cs" />
+    <Compile Include="DataAccess\WaterUsageDB.cs" />
+    <Compile Include="DataAccess\WorkHourDB.cs" />
+    <Compile Include="DataAccess\WTEDB.cs" />
+    <Compile Include="Enums\AddressType.cs" />
+    <Compile Include="BusinessObject\RecordLogger.cs" />
+    <Compile Include="BusinessObject\Ref_WaterSourceLocation.cs" />
+    <Compile Include="BusinessObject\WaterAnalysis.cs" />
+    <Compile Include="DataAccess\AccountAddressDB.cs" />
+    <Compile Include="DataAccess\AccountDB.cs" />
+    <Compile Include="DataAccess\AddressDB.cs" />
+    <Compile Include="DataAccess\AuthorizedMemberDB.cs" />
+    <Compile Include="DataAccess\MyDBConnection.cs" />
+    <Compile Include="DataAccess\WaterAnalysisDB.cs" />
+    <Compile Include="Enums\ReminderFrequency.cs" />
+    <Compile Include="Helper\StringParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

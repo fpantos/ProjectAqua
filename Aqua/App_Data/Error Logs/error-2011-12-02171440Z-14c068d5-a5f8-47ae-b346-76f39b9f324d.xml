@@ -1,0 +1,180 @@
+﻿<error errorId="14c068d5-a5f8-47ae-b346-76f39b9f324d" host="NEI-PC" type="System.ArgumentException" message="Unknown web method GetInvoiceSearchItems.&#xD;&#xA;Parameter name: methodName" source="System.Web.Extensions" detail="System.ArgumentException: Unknown web method GetInvoiceSearchItems.&#xD;&#xA;Parameter name: methodName&#xD;&#xA;   at System.Web.Script.Services.WebServiceData.GetMethodData(String methodName)&#xD;&#xA;   at System.Web.Script.Services.RestHandler.CreateHandler(WebServiceData webServiceData, String methodName)&#xD;&#xA;   at System.Web.Script.Services.RestHandler.CreateHandler(HttpContext context)&#xD;&#xA;   at System.Web.Script.Services.RestHandlerFactory.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)&#xD;&#xA;   at System.Web.Script.Services.ScriptHandlerFactory.GetHandler(HttpContext context, String requestType, String url, String pathTranslated)&#xD;&#xA;   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)&#xD;&#xA;   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="fpadmin" time="2011-12-02T17:14:40.8205482Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_CONTENT_LENGTH:56&#xD;&#xA;HTTP_CONTENT_TYPE:application/json; charset=UTF-8&#xD;&#xA;HTTP_ACCEPT:*/*&#xD;&#xA;HTTP_ACCEPT_CHARSET:ISO-8859-1,utf-8;q=0.7,*;q=0.3&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip,deflate,sdch&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_COOKIE:ASP.NET_SessionId=qocw2q55r5rvskz3cp4hei3o; .ASPXAUTH=638FB5D9D704002DF43E60D93D0B011FA0AD26338EBF1F78BEF797A4D580D588D8DF3C539B275F38E1A61EE52F7E795C09C6BC7A57018071E8B14457056C57F0CEAC13E9F388D5B6FFAF3D119DD52142561C792195E427F6E6C6D9107D362E58BE60AF519AD3613E5491F135D38BB1A9D79AF5C6&#xD;&#xA;HTTP_HOST:localhost:55923&#xD;&#xA;HTTP_REFERER:http://localhost:55923/Sales/SearchInvoice.aspx&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2&#xD;&#xA;HTTP_ORIGIN:http://localhost:55923&#xD;&#xA;HTTP_X_REQUESTED_WITH:XMLHttpRequest&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Content-Length: 56&#xD;&#xA;Content-Type: application/json; charset=UTF-8&#xD;&#xA;Accept: */*&#xD;&#xA;Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3&#xD;&#xA;Accept-Encoding: gzip,deflate,sdch&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Cookie: ASP.NET_SessionId=qocw2q55r5rvskz3cp4hei3o; .ASPXAUTH=638FB5D9D704002DF43E60D93D0B011FA0AD26338EBF1F78BEF797A4D580D588D8DF3C539B275F38E1A61EE52F7E795C09C6BC7A57018071E8B14457056C57F0CEAC13E9F388D5B6FFAF3D119DD52142561C792195E427F6E6C6D9107D362E58BE60AF519AD3613E5491F135D38BB1A9D79AF5C6&#xD;&#xA;Host: localhost:55923&#xD;&#xA;Referer: http://localhost:55923/Sales/SearchInvoice.aspx&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2&#xD;&#xA;Origin: http://localhost:55923&#xD;&#xA;X-Requested-With: XMLHttpRequest&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\NEI\Capstone\ProjectAqua\Aqua\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="Forms" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="fpadmin" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="nei-pc\nei" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="fpadmin" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="56" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="application/json; charset=UTF-8" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="" />
+    </item>
+    <item name="HTTPS">
+      <value string="" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/WebService/AutoComplete.asmx/GetInvoiceSearchItems" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\NEI\Capstone\ProjectAqua\Aqua\WebService\AutoComplete.asmx" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/WebService/AutoComplete.asmx" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="55923" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="" />
+    </item>
+    <item name="URL">
+      <value string="/WebService/AutoComplete.asmx" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="56" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="application/json; charset=UTF-8" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="*/*" />
+    </item>
+    <item name="HTTP_ACCEPT_CHARSET">
+      <value string="ISO-8859-1,utf-8;q=0.7,*;q=0.3" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip,deflate,sdch" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="ASP.NET_SessionId=qocw2q55r5rvskz3cp4hei3o; .ASPXAUTH=638FB5D9D704002DF43E60D93D0B011FA0AD26338EBF1F78BEF797A4D580D588D8DF3C539B275F38E1A61EE52F7E795C09C6BC7A57018071E8B14457056C57F0CEAC13E9F388D5B6FFAF3D119DD52142561C792195E427F6E6C6D9107D362E58BE60AF519AD3613E5491F135D38BB1A9D79AF5C6" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:55923" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:55923/Sales/SearchInvoice.aspx" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2" />
+    </item>
+    <item name="HTTP_ORIGIN">
+      <value string="http://localhost:55923" />
+    </item>
+    <item name="HTTP_X_REQUESTED_WITH">
+      <value string="XMLHttpRequest" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="ASP.NET_SessionId">
+      <value string="qocw2q55r5rvskz3cp4hei3o" />
+    </item>
+    <item name=".ASPXAUTH">
+      <value string="638FB5D9D704002DF43E60D93D0B011FA0AD26338EBF1F78BEF797A4D580D588D8DF3C539B275F38E1A61EE52F7E795C09C6BC7A57018071E8B14457056C57F0CEAC13E9F388D5B6FFAF3D119DD52142561C792195E427F6E6C6D9107D362E58BE60AF519AD3613E5491F135D38BB1A9D79AF5C6" />
+    </item>
+  </cookies>
+</error>

@@ -1,0 +1,460 @@
+﻿@import url('modalPopup.css');
+@import url('gridViewStyles.css');
+@import url('detailsViewStyles.css');
+@import url('autocompleteSyle.css');
+/*@import url('tabContainerStyle.css');*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+    display: block;
+}
+
+ol, ul
+{
+    list-style: none;
+}
+blockquote, q
+{
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after
+{
+    content: '';
+    content: none;
+}
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+body
+{
+    font-family: "HelveticaNeue-Light" , "Helvetica Neue Light" , "Helvetica Neue" , Helvetica, Arial, "Lucida Grande" , sans-serif;
+    font-weight: 300;
+    line-height: 1; /* background-color: #F8F8F8;*/
+    color: #2A2A2A;
+}
+
+#linearBg2
+{
+    /* fallback */
+    background-color: #1a82f7;
+    background: url(images/linear_bg_2.png);
+    background-repeat: repeat-x; /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #2F2727, #1a82f7); /* Safari 4-5, Chrome 1-9 */ /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727)); /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#2F2727, #1a82f7); /* Opera 11.10+ */
+    background: -o-linear-gradient(#2F2727, #1a82f7);
+}
+
+.wrapper
+{
+    /*   min-height: 100%; */
+    height: auto !important;
+    height: 80%;
+    margin: 0% 10% 0% 10%;
+    width: 80%;
+    -moz-box-shadow: 0 0 15px 1px #888;
+    -webkit-box-shadow: 0 0 20px 1px #888;
+    box-shadow: 0 0 20px 1px #888;
+}
+
+.wrapper-noshadow
+{
+    /*   min-height: 100%; */
+    height: auto !important;
+    height: 80%;
+    margin: 0% 10% 0% 10%;
+    width: 80%; /* border:1px solid #B9BCE3;*/
+}
+
+
+
+.content1
+{
+    margin: 5% 0% 0% 0%; /*background-color:Aqua;*/
+}
+
+h1
+{
+    color: #1A3B69;
+}
+
+h2
+{
+    color: #1A3B69;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+.footer, .push
+{
+    height: 6em;
+}
+
+.header
+{
+    background-color: #1f6aae;
+    height: 10%; /*     padding-top: 1%;     padding-left: 10%;     padding-bottom: 1%;*/
+    border: 1px solid gray;
+    margin: 0% 10% 0% 10%;
+    width: 80%;
+}
+
+.footer
+{
+     padding-top: 2%;
+   padding-bottom: 2%;
+    display: block;
+    background-color: #1f6aae;
+    font-size: small; /*margin: 0% 10% 0% 10%;     width: 80%;*/
+}
+
+.footer p
+{
+    color: White;
+    text-align: center;
+}
+
+.menuStyle
+{
+    display: block;
+}
+
+
+
+.formView-input
+{
+    margin-left: 3em;
+    width: 80%;
+}
+
+.formView-input p
+{
+    padding-top: 0.2em;
+}
+
+
+.propertyLabel
+{
+    width: 180px;
+    float: left;
+    text-align: right;
+    margin-right: 0.5em;
+    padding-right: 1.5em;
+    display: block;
+    font-size: 0.9em; /* border: 1px solid gray;  margin-top: 0.5em;*/
+}
+.propertyValue
+{
+    width: 250px;
+}
+
+
+
+.textboxOnEditGridview
+{
+    width:80px;
+    font-size:0.85em; 
+    }
+
+.propertyValue-extendedWidth
+{
+    width: 350px;
+}
+
+.watermarked
+{
+    width: 250px;
+    color: Gray;
+}
+
+
+.checkboxProperty
+{
+    display: block;
+    padding-left: 10px;
+    font-size: small;
+    padding-left: 200px;
+}
+.phoneNumberWidth_1
+{
+    width: 35px;
+}
+.phoneNumberWidth_2
+{
+    width: 60px;
+}
+.phoneAreaCode
+{
+    width: 35px;
+}
+
+h1
+{
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+
+h3
+{
+    padding-left: 80px;
+    margin-bottom: 10px;
+}
+
+.mainContainer
+{
+    margin: 0 2% 0 2%;
+}
+
+
+.formviewEdit
+{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.formviewEdit p
+{
+    margin: 0.2em;
+}
+.innerDiv
+{
+    padding: 0;
+    margin: 2% 20% 3% 5%;
+    border: 1px solid gray;
+}
+
+.innerDiv-HeaderLabel
+{
+    font-weight: bold;
+}
+
+.innerDiv-propertyLabel
+{
+    float: left;
+    text-align: left;
+    margin: 0 0.5em 0 0;
+    display: block;
+    width: 10em;
+    font-size: 0.9em;
+}
+
+.innerDiv-propertyValue
+{
+    width: 3em;
+    margin-left: 0.5em;
+    font-size: 0.9em;
+}
+
+
+
+.linkbutton
+{
+    font-size: 1em;
+    margin-left: 8em;
+}
+
+.span-innerDiv-detailsHeader
+{
+    font-weight: bold;
+    width: 180px;
+    text-align: left;
+    margin-right: 0.5em;
+    display: inline-block;
+}
+
+.span-innerDiv-details
+{
+    display: block;
+    margin-left: 5em;
+    font-size: 0.9em;
+}
+
+.span-primaryIdentifier
+{
+    display: block;
+    margin-left: 2em;
+    font-size: 1em;
+}
+
+.divSpacer
+{
+    display: block;
+    clear: both;
+}
+
+.div-primaryOptions, .div-primaryIdentifiers
+{
+    width: 49%;
+    height: 4.5em;
+}
+
+.div-primaryOptions
+{
+    float: right;
+}
+
+.div-primaryIdentifiers
+{
+    float: left;
+}
+
+.row
+{
+    clear: both;
+}
+
+.span-label
+{
+    width: 10em;
+    float: left;
+    text-align: right;
+    margin-right: 0.5em;
+    display: block;
+    font-size: 14px;
+}
+
+.span-value
+{
+    width: 1em;
+}
+
+
+.panel-formview
+{
+    background-color: #FAFAFA;
+    width: 100%;
+}
+
+.div-navigation-linkbutton
+{
+    display: block;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 1em;
+}
+
+.linkbutton-no-line
+{
+    text-decoration: none;
+    color: #1f6aae;
+}
+
+.linkbutton-no-line:hover
+{
+ text-decoration:underline;
+}
+
+
+
+.linkStyle
+{
+    background-color: #4C88BE;/* #FFFF00;*/
+    color: White;
+    border: 1px solid #333333;
+    text-decoration: none;
+    padding: 0.2em 2em 0.2em 2em;
+}
+
+.linkStyle-Cancel
+{
+    background-color: #CCCCCC;
+    color: #333333;
+    border: 1px solid #666600;
+    text-decoration: none;
+    padding: 0.2em 2em 0.2em 2em;
+}
+
+.linkStyle-secondaryButton
+{
+    background-color: #1f6aae;
+    color: White;
+    border: 1px solid #666600;
+    text-decoration: none;
+    padding: 0.2em 2em 0.2em 2em;
+}
+
+.linkDeactivatedStyle
+{
+    background-color: #ADADAD;
+    color: #333333;
+    border: 1px solid #666600;
+    text-decoration: none;
+    padding: 0.2em 2em 0.2em 2em;
+}
+
+.linkStyle:hover
+{
+    text-decoration: underline;
+}
+
+.div-workOrder
+{
+    text-align: right;
+    margin: 1% 30% 0 0;
+}
+
+.mainContainer-innerSpacer
+{
+    margin: 1.5em 5em 1.5em 5em;
+}
+
+
+.testGradient
+{
+    height: 10px;
+    background: #999; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000');
+}
+
+
+.css-grd
+{
+    height: 30px; /* default background colour, for all layout engines that don't implement gradients */
+    background: #2a6da9; /* gecko based browsers */
+    background: -moz-linear-gradient(top, #55aaee, #003366); /* webkit based browsers */ /*background:-webkit-gradient(linear, 0% 6%, 0% 100%, from(#1A3B69), to(#FFFFFF), color-stop(1,#FFFFFF))*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#1f6aae), to(#FFFFFF));
+    color: #000000; /* text colour (black) */
+    height: auto; /* gradient uses the full height of the element */
+    padding: 5px; /* distance from border edge to text */ /*background: -webkit-gradient(linear, left top, left bottom, from(#55aaee), to(#003366));*/
+}
+
+.div-requiredFieldMessage
+{
+    margin-bottom: 1em;
+}
+
+.requiredFieldLabelMessage
+{
+    font-size: 0.85em;
+}
+
+

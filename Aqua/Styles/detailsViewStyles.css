@@ -1,0 +1,28 @@
+﻿
+.dviewRowStyle-basic, .dviewAlternatingStyle-basic
+{
+    border: 1px solid #E5E5E5;
+    font-size: 0.85em;
+}
+
+
+.dviewRowStyle-basic
+{
+    background-color: #FFFFFF;
+}
+
+.dviewAlternatingStyle-basic
+{
+    background-color: #EAEFF3;
+}
+
+.dviewFieldHeaderStyle-basic
+{
+    text-align: right; /* border:solid 1px #E5E5E5; */
+    padding: 0.3em 3em 0.3em 0;
+    width: 25%;
+    color: #2A2A2A;
+}
+
+
+

@@ -1,0 +1,79 @@
+﻿.loginWrapperShadow
+{
+    min-height: 100%;
+    height: auto !important;
+    height: 80%;
+    margin: 10% 25% 10% 25%;
+    -moz-box-shadow: 0 0 15px 1px #888;
+    -webkit-box-shadow: 0 0 20px 1px #888;
+    box-shadow: 0 0 20px 1px #888;
+}
+
+h1
+{
+    color: #1A3B69;
+}
+
+.test
+{
+    background: #1e5799; /* Old browsers */ /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEyJSIgc3RvcC1jb2xvcj0iIzIwN2NjYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzI5ODlkOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcxJSIgc3RvcC1jb2xvcj0iIzdkYjllOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  #1e5799 0%, #207cca 12%, #2989d8 44%, #7db9e8 71%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(12%,#207cca), color-stop(44%,#2989d8), color-stop(71%,#7db9e8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #1e5799 0%,#207cca 12%,#2989d8 44%,#7db9e8 71%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #1e5799 0%,#207cca 12%,#2989d8 44%,#7db9e8 71%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #1e5799 0%,#207cca 12%,#2989d8 44%,#7db9e8 71%); /* IE10+ */
+    background: linear-gradient(top,  #1e5799 0%,#207cca 12%,#2989d8 44%,#7db9e8 71%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-8 */
+}
+.mainLoginBox
+{
+    float: right;
+    margin-right: 80px;
+    background-color: #1f6aae;
+    width: 50%;
+}
+.mainLoginBox div
+{
+    padding: 0.3em 0 0.3em 0;
+}
+.loginLabel
+{
+    margin-top: 2em;
+    color: #FFFFFF;
+}
+
+.loginValue
+{
+    font-size: 1em;
+    width: 200px;
+}
+
+#divMain
+{
+    /* padding-bottom: .em;*/
+    background-color: #1f6aae;
+}
+
+#divLockIcon
+{
+    float: left;
+    margin-left: 10%;
+    text-align: center;
+}
+
+#divStoreLogo
+{
+    margin: 0% 0% 5% 0%;
+    padding-left: 2%;
+    text-align: left;
+    background-color: #1f6aae;
+}
+
+#boltPlugin
+{
+    color: White;
+    text-align: right;
+    padding-right: 1em;
+    font-size: 0.75em;
+}

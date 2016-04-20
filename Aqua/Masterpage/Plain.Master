@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Plain.master.cs" Inherits="Aqua.Masterpage.Plain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Styles/mainStyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div class="wrapper">
+        <div style="background-color: #1f6aae; height: 80px; ">
+            <div style="float: left;padding:1em 0 0 1em;">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo_s.jpg" />
+            </div>
+
+        </div>
+
+        <%-- main content--%>
+        <div class="content1">
+            <asp:ContentPlaceHolder ID="mainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="push">
+        </div>
+        <%--footer--%>
+        <div class="footer">
+            <p >
+                The Water Store Milton
+                <br />
+                525 Ontario Street South
+                <br />
+                Milton, ON L9T 2N2<br />
+                (905) 693-8820
+            </p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

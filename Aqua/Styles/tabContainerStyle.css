@@ -1,0 +1,38 @@
+﻿.AccountTab .ajax__tab_header
+{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em 0 0.5em 0;
+}
+.AccountTab .ajax__tab_outer
+{
+}
+.AccountTab .ajax__tab_inner
+{
+    font-size: 0.9em;
+    padding: 7px;
+    margin: 3px;
+    background-color: #E5E5E5;
+    color: #2A2A2A;
+}
+.AccountTab .ajax__tab_hover .ajax__tab_outer
+{
+}
+.AccountTab .ajax__tab_hover .ajax__tab_inner
+{
+    /*1f6aae*/
+    background-color: #5C7D9D;
+    color: White;
+    cursor: pointer;
+}
+
+.AccountTab .ajax__tab_active .ajax__tab_outer
+{
+    background-color: White;
+}
+.AccountTab .ajax__tab_active .ajax__tab_inner
+{
+    /* border-bottom: 3px solid #1f6aae;*/
+    background-color: #5C7D9D;
+    color: White;
+}

@@ -1,0 +1,19 @@
+﻿/*autocomplete flyout*/
+.autocomplete_list
+{
+
+    font-size: .85em;
+     color:Blue;
+      border:1px solid gray;
+}
+
+.autocomplete_highlighed_item
+{
+ color:Pink;
+}
+
+.autocomplete_list_item
+{
+
+      color:Green;
+}

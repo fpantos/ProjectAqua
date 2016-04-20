@@ -1,0 +1,225 @@
+﻿/*This is the default Gridview style: left aligned text */
+.gridviewBaseStyle
+{
+    font-size: .85em;
+    width: 100%; /*  border: 1px solid #E0E0E0;*/
+}
+
+.gridviewBaseStyle td
+{
+    padding: 0.5em 0 0.5em 1em;
+}
+
+
+.gridviewHeaderStyle
+{
+    background-color: #5C7D9D; /* #335C85;*/
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: left;
+    height: 1.2em;
+}
+
+.gridviewHeaderStyle-min
+{
+    background-color: #5C7D9D; /* #335C85;*/
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    height: 1.2em;
+}
+
+.gridviewHeaderStyle th, .gridviewHeaderStyle-min th
+{
+    padding-left: 0.5em;
+    border: 2px solid white;
+}
+
+
+
+.gridviewRowStyle
+{
+    background-color: #EAEFF3;
+}
+
+.gridviewAlternatingStyle
+{
+    background-color: #EAEFF3; /*E6EBF0*/
+}
+
+.gridviewRowStyle, .gridviewAlternatingStyle
+{
+    text-align: left;
+    font-size: 1em; /*border: 1px solid #E0E0E0;*/
+}
+
+.gridviewRowStyle td, .gridviewAlternatingStyle td
+{
+    border: 2px solid white;
+}
+
+
+
+.gridviewFooterStyle
+{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    border-top: 2px solid gray;
+    border: 2px solid white;
+    background-color: #5C7D9D;
+    height: 1.3em;
+    margin-top: 10px;
+}
+
+
+/* Header style for gridviews with sorting functionality*/
+.gridviewHeaderStyle-withSorting
+{
+    background-color: #5C7D9D; /* #335C85;*/
+    color: white;
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: bold;
+}
+
+.gridviewHeaderStyle-withSorting th a
+{
+    text-decoration: none;
+    color: White;
+}
+
+.gridviewHeaderStyle-withSorting th a:hover
+{
+    text-decoration: underline;
+}
+
+.gridviewHeaderStyle-withSorting th
+{
+    padding-left: 1em;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+/* START Gridview styles for Service Work Scheduling */
+
+.gridviewBaseStyle-scheduling
+{
+    font-size: small;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+
+.gridviewHeaderStyle-scheduling
+{
+    background-color: #5C7D9D; /* #1f6aae;*/
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    height: 2em;
+    border: 1px solid white;
+}
+
+.gridviewHeaderStyle-scheduling th
+{
+    border: 1px solid white;
+    text-align: center;
+}
+
+
+
+.gridviewRowStyle-scheduling
+{
+    background-color: #EAEFF3; /*B2C2D1*/
+    text-align: center;
+    font-size: small;
+}
+
+.gridviewRowStyle-scheduling td, .gridviewAlternatingStyle-scheduling td
+{
+    border: 1px solid white;
+}
+
+.gridviewRowStyle-scheduling td:hover, .gridviewAlternatingStyle-scheduling td:hover
+{
+    background-color: #FFFFB2;
+}
+
+
+
+.gridviewRowStyle-scheduling:hover, .gridviewAlternatingStyle-scheduling:hover
+{
+    background-color: #FFFFF0;
+}
+
+
+
+.gridviewAlternatingStyle-scheduling
+{
+    background-color: #EAEFF3; /**/
+    text-align: center;
+    font-size: small;
+}
+
+
+/* END Gridview styles for Service Work Scheduling */
+
+.gridviewItemStyle-Currency
+{
+    text-align: right;
+}
+
+/* gridview prepaid packages*/
+.gridviewBaseStyle-wat
+{
+    font-size: 1em;
+    width: 100%; /*  border: 1px solid #E0E0E0;*/
+}
+
+.gridviewBaseStyle-wat td
+{
+    padding: 1em 0 1em 0.5em;
+}
+
+
+.gridviewHeaderStyle-wat
+{
+    /*background-color: #5C7D9D;  #335C85;*/
+    color: #2A2A2A;
+    font-size: 1em;
+    text-align: left;
+    height: 1.2em;
+    font-weight: bold;
+}
+
+
+.gridviewRowStyle-wat
+{
+}
+
+.gridviewAlternatingStyle-wat
+{
+}
+
+.gridviewRowStyle-wat, .gridviewAlternatingStyle-wat
+{
+    text-align: left;
+    font-size: 1em; /*border: 1px solid #E0E0E0;*/
+}
+
+.gridviewRowStyle-wat td, .gridviewAlternatingStyle-wat td
+{
+}
+
+
+
+
+

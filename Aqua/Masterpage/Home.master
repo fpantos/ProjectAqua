@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Masterpage/Main.Master" AutoEventWireup="true"
+    CodeBehind="Home.master.cs" Inherits="Aqua.Masterpage.Home" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="headContentPlaceHolder">
+        <title>The Water Store</title>
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="NavigationPlaceHolder" runat="server">
+    <%--menu--%>
+    <%--<div class="css-grd"  style="padding:0.5em 0 0 2em;  height:1px; "  ></div>--%>
+    <div style="padding: 0.5em 0 0 2em;">
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal"
+            StaticDisplayLevels="2" ForeColor="#1A3B69" OnMenuItemClick="Menu1_MenuItemClick"
+            OnMenuItemDataBound="Menu1_MenuItemDataBound">
+            <DynamicHoverStyle ForeColor="#1A3B69" Font-Underline="true" />
+            <%--BackColor="#EAEAEA"--%>
+            <DynamicMenuItemStyle ItemSpacing="4" ForeColor="#1A3B69" />
+            <DynamicMenuStyle BorderColor="Gray" BorderWidth="1px" HorizontalPadding="10" />
+            <DynamicSelectedStyle />
+            <StaticMenuStyle />
+            <StaticMenuItemStyle ItemSpacing="5" Width="100%" Height="10px" />
+            <StaticHoverStyle />
+            <DataBindings>
+                <asp:MenuItemBinding DataMember="SiteMapNode" NavigateUrlField="Url" TextField="Title"
+                    ToolTipField="Description" />
+            </DataBindings>
+        </asp:Menu>
+    </div>
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="mainContent" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="mainContentPlaceHolder">
+        <h2>
+            content details</h2>
+    </asp:ContentPlaceHolder>
+</asp:Content>
