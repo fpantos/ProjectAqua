@@ -1,0 +1,20 @@
+Software used:
+Visual Studio
+SQL Server Management Studio
+
+Add-ons:
+Ajax Control Toolkit
+Elmah error log (http://code.google.com/p/elmah/)
+Crystal Reports
+
+Configuration:
+Add references to elmah and ajax control toolkit
+Change files web.config and app.config, where there's a line that looks like this connectionString="Data Source=****;Initial Catalog=AquaOne;Integrated Security=True" change the data source to whatever your database server is called
+
+Database:
+Create database AquaOne
+Run Full DB Script_with_data.sql
+
+Login:
+user: fpadmin
+password: 12345
